@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Colombia 5.0</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════ NAVBAR ══════════════════════════════════ -->
+  <header class="hero" id="home">
+    <div class="hero-bg"></div>
+    <nav class="navbar" id="navbar">
+      <div class="nav-logo">
+        <img src="images/logo-col50.png" alt="Colombia 5.0" class="nav-logo-img"/>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home"      class="nav-link active" data-section="home">Inicio</a></li>
+        <li><a href="#conf1"     class="nav-link"        data-section="conf1">Conferencia 1</a></li>
+        <li><a href="#conf2"     class="nav-link"        data-section="conf2">Conferencia 2</a></li>
+        <li><a href="#glossary"  class="nav-link"        data-section="glossary">Glossary</a></li>
+        <li><a href="#reflexion" class="nav-link"        data-section="reflexion">Reflexión Ética</a></li>
+        <li>
+          <button class="dark-toggle" id="darkToggle" aria-label="Cambiar tema">
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- HERO CONTENT -->
+    <div class="hero-content reveal">
+      <img src="images/logo-col50.png" alt="Col5.0" class="hero-logo"/>
+      <span class="hero-tag">Colombia 5.0 · Evento Académico </span>
+      <h1 class="hero-title">COLOMBIA<span> 5.0</span><br/></h1>
+      <p class="hero-subtitle">CONFERENCIAS SOBRE EL DESAROLLO TECNOLOGICO (VIDEOJUEGOS & CIBERSEGURIDAD EMERGENTES)</p>
+      <div class="hero-meta">
+        <div class="meta-card"><span class="meta-num">2</span><span class="meta-label">Conferencias</span></div>
+        <div class="meta-card"><span class="meta-num">4</span><span class="meta-label">Conferencistas</span></div>
+        <div class="meta-card"><span class="meta-num">30+</span><span class="meta-label">Términos técnicos</span></div>
+      </div>
+      <div class="hero-cta">
+        <button class="btn-primary" onclick="scrollToSection('conf1')">Ver Conferencias</button>
+        <button class="btn-outline" onclick="scrollToSection('glossary')">Ir al Glosario</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════════════════ CONFERENCIA 1 ══════════════════════════════════ -->
+    <section class="conference-section" id="conf1">
+      <div class="section-header reveal">
+        <div class="conf-badge badge-1">Conferencia 01</div>
+        <h2 class="section-title">Videojuegos: <br/><span>Crear · Experiencia · Diseño</span></h2>
+        <div class="speakers-row">
+          <div class="speaker-chip">
+            <div class="speaker-avatar av1">SG</div>
+            <div><strong>Sara Givaldo</strong><small>Game Designer</small></div>
+          </div>
+          <div class="speaker-chip">
+            <div class="speaker-avatar av2">MB</div>
+            <div><strong>Mauricio Betancourt</strong><small>Lead Developer</small></div>
+          </div>
+          <div class="company-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+            Indie Level Studio
+          </div>
+        </div>
+      </div>
+
+      <div class="lang-toggle-wrap reveal">
+        <div class="lang-toggle" id="langToggle1">
+          <button class="lang-btn active" data-conf="1" data-lang="es">🇨🇴 Español</button>
+          <button class="lang-btn"        data-conf="1" data-lang="en">🇺🇸 English</button>
+        </div>
+      </div>
+
+      <!-- ES -->
+      <div class="conf-content" id="conf1-es">
+        <div class="info-grid reveal">
+          <div class="info-card">
+            <h3>Introducción</h3>
+            <p>Indie Level Studio es un estudio independiente colombiano dedicado al desarrollo de videojuegos. Sus conferencistas, Sara Givaldo y Mauricio Betancourt, compartieron su experiencia real construyendo productos de entretenimiento interactivo para clientes locales e internacionales, revelando los desafíos técnicos y creativos del proceso.</p>
+          </div>
+          <div class="info-card">
+            <h3>Objetivo</h3>
+            <p>Exponer la realidad del software en la industria de los videojuegos: cómo se analiza al usuario, cómo se crea una experiencia memorable, cómo funciona la relación con el cliente y qué tan importante es que el código sea flexible y escalable desde el primer día.</p>
+          </div>
+        </div>
+
+        <div class="topic-block reveal">
+          <h3 class="topic-title"><span class="topic-num">01</span>Desarrollo del Tema</h3>
+          <div class="topic-body">
+            <p>El proceso de creación de un videojuego no empieza con el código, empieza con una pregunta: <em>¿quién es el usuario?</em> Indie Level Studio plantea que diseñar un videojuego es diseñar una experiencia completa, hay que entender qué motiva al jugador, qué lo frustra y cómo se lo puede guiar sin que se sienta guiado.</p>
+            <p>Mauricio Betancourt explicó que el <strong>onboarding</strong> (la primera experiencia del jugador) es uno de los elementos más críticos, si el jugador no entiende el juego en los primeros minutos, simplemente se va. Por eso, el estudio dedica una parte importante del tiempo al <strong>UX dinámico</strong>: interfaces que se adaptan al nivel y comportamiento del usuario.</p>
+            <p>Sara Givaldo habló sobre la importancia del <strong>pitch</strong> ante clientes. presentar un videojuego requiere más que mostrar una demo; hay que construir un <strong>deck builder</strong> que cuente la historia del producto, el mercado objetivo y el retorno esperado.</p>
+            <p>Un concepto clave fue el <strong>"golden candidate"</strong>: el prototipo o versión del juego que pasa todas las pruebas internas y se considera listo para mostrar al cliente o publicar. llegar ahí requiere múltiples ciclos de <strong>feedback</strong>.</p>
+          </div>
+        </div>
+
+        <div class="highlight-block reveal">
+          <h3 class="topic-title"><span class="topic-num">02</span>Puntos Importantes</h3>
+          <ul class="highlight-list">
+            <li><strong>Crear–Experiencia–Diseño:</strong> La triada fundamental del desarrollo de videojuegos, No basta con que el juego funcione; debe generar una experiencia memorable.</li>
+            <li><strong>Sistema de progresión:</strong> Implementar un sistema que mantenga al jugador enganchado y atraiga nuevos usuarios es clave para la retención de clientes.</li>
+            <li><strong>Código flexible:</strong> La arquitectura del software debe permitir cambios rápidos, el cliente siempre va a pedir modificaciones.</li>
+            <li><strong>Margen de estudio:</strong> Todo estudio independiente necesita calcular su margen operativo para saber cuántos proyectos puede sostener simultáneamente.</li>
+            <li><strong>Hardware de feedback:</strong> Dispositivos como controles con vibración háptica o pantallas táctiles que devuelven respuesta física al jugador, mejoran la inmersión.</li>
+            <li><strong>Unity y React:</strong> Combinación de motores de juego (Unity) con tecnologías web (React) para juegos que corren en navegador o tienen interfaz administrativa web.</li>
+            <li><strong>Onboarding efectivo:</strong> Un tutorial bien diseñado reduce la tasa de abandono en los primeros minutos de juego.</li>
+            <li><strong>Clusion:</strong> Término interno del estudio que hace referencia al cierre satisfactorio de una mecánica de juego; el momento en que el jugador siente que "lo logró".</li>
+          </ul>
+        </div>
+
+        <div class="keyword-section reveal">
+          <h3 class="topic-title"><span class="topic-num">03</span>Palabras Clave</h3>
+          <div class="keyword-grid">
+            <span class="kw-tag">Onboarding</span><span class="kw-tag">UX Dinámico</span><span class="kw-tag">Pitch</span>
+            <span class="kw-tag">Deck Builder</span><span class="kw-tag">Golden Candidate</span><span class="kw-tag">Feedback</span>
+            <span class="kw-tag">Hardware de Feedback</span><span class="kw-tag">Unity + React</span><span class="kw-tag">Clusion</span>
+            <span class="kw-tag">Margen de Estudio</span><span class="kw-tag">Sistema de Progresión</span><span class="kw-tag">Código Flexible</span>
+          </div>
+        </div>
+
+        <div class="conclusion-block reveal">
+          <h3 class="topic-title"><span class="topic-num">04</span>Conclusión</h3>
+          <p>Indie Level Studio demostró que desarrollar videojuegos en Colombia es viable si se combina talento técnico con visión de producto, la clave está en entender al usuario, construir experiencias antes que mecánicas, y mantener un código que pueda crecer junto con las ideas del cliente, el videojuego es, en última instancia, una forma de comunicación.</p>
+        </div>
+
+        <!-- GALERÍA CARRUSEL CONF 1 -->
+        <div class="media-section reveal">
+          <h3 class="topic-title"><span class="topic-num">05</span>Galería Multimedia</h3>
+          <p class="media-subtitle">Tomas del evento — Indie Level Studio</p>
+          <div class="carousel" id="carousel1">
+            <div class="carousel-track" id="track1">
+              <div class="carousel-slide"><div class="media-placeholder" <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg><span><img src="images/1.jpeg" alt="Imagen"></span></div></div>
+              <div class="carousel-slide"><div class="media-placeholder" <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg><span><img src="images/2.jpeg" alt="Imagen"></span></div></div>
+              <div class="carousel-slide"><div class="media-placeholder" <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg><span><img src="images/3.jpeg" alt="Imagen"></span></div></div>
+              <div class="carousel-slide"><div class="media-placeholder" <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg><span><img src="images/4.jpeg" alt="Imagen"></span></div></div>
+              <div class="carousel-slide"><div class="media-placeholder" <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg><span><img src="images/5.jpeg" alt="Imagen"></span></div></div>
+              <div class="carousel-slide"><div class="media-placeholder" <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg><span><img src="images/6.jpeg" alt="Imagen"></span></div></div>
+              <div class="carousel-slide"><div class="media-placeholder" <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg><span><img src="images/7.jpeg" alt="Imagen"></span></div></div>
+              <div class="carousel-slide"><div class="media-placeholder" <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg><span><img src="images/8.jpeg" alt="Imagen"></span></div></div>
+              <div class="carousel-slide"><div class="media-placeholder" <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg><span><img src="images/9.jpeg" alt="Imagen"></span></div></div>
+              <div class="carousel-slide"><div class="media-placeholder" <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg><span><img src="images/10.jpeg" alt="Imagen"></span></div></div>
+            </div>
+            <button class="carousel-btn carousel-prev" data-carousel="1" aria-label="Anterior">&#8249;</button>
+            <button class="carousel-btn carousel-next" data-carousel="1" aria-label="Siguiente">&#8250;</button>
+            <div class="carousel-dots" id="dots1"></div>
+            <div class="carousel-counter" id="counter1">1 / 10</div>
+          </div>
+        </div>
+      </div><!-- /conf1-es -->
+
+      <!-- EN -->
+      <div class="conf-content hidden" id="conf1-en">
+        <div class="info-grid reveal">
+          <div class="info-card"><h3>Introduction</h3><p>Indie Level Studio is an independent Colombian game development studio. Speakers Sara Givaldo and Mauricio Betancourt shared their real-world experience building interactive entertainment products for local and international clients, revealing the technical and creative challenges of the process.</p></div>
+          <div class="info-card"><h3>Objective</h3><p>To expose the reality of software development in the video game industry: how to analyze the user, how to create a memorable experience, how the client relationship works, and why flexible, scalable code matters from day one.</p></div>
+        </div>
+        <div class="topic-block reveal">
+          <h3 class="topic-title"><span class="topic-num">01</span>Topic Development</h3>
+          <div class="topic-body">
+            <p>Building a video game doesn't start with code — it starts with a question: <em>who is the user?</em> Indie Level Studio argues that designing a video game means designing a complete experience. You must understand what motivates the player, what frustrates them, and how to guide them without making it feel forced.</p>
+            <p>Mauricio Betancourt explained that <strong>onboarding</strong> — the player's first experience — is one of the most critical elements. If a player doesn't understand the game in the first few minutes, they simply leave. That's why the studio invests heavily in <strong>dynamic UX</strong>: interfaces that adapt to the user's level and behavior.</p>
+            <p>Sara Givaldo spoke about the importance of a strong <strong>pitch</strong> to clients. Presenting a game requires more than showing a demo; you need a <strong>deck builder</strong> that tells the product's story, defines the target market, and shows the expected return.</p>
+            <p>A key concept was the <strong>"golden candidate"</strong>: the prototype or game version that passes all internal tests and is considered ready to show the client or release. Getting there requires multiple <strong>feedback</strong> cycles.</p>
+          </div>
+        </div>
+        <div class="highlight-block reveal">
+          <h3 class="topic-title"><span class="topic-num">02</span>Key Points</h3>
+          <ul class="highlight-list">
+            <li><strong>Create–Experience–Design:</strong> The fundamental triad of game development, it's not enough for the game to work; it must generate a memorable experience.</li>
+            <li><strong>Progression System:</strong> A system that keeps players engaged and attracts new users is key to client retention.</li>
+            <li><strong>Flexible Code:</strong> The software architecture must allow for rapid changes, clients will always request modifications.</li>
+            <li><strong>Study Margin:</strong> Every indie studio needs to calculate its operating margin to know how many projects it can sustain simultaneously.</li>
+            <li><strong>Feedback Hardware:</strong> Devices like haptic controllers or touchscreens that return physical response to the player improve immersion.</li>
+            <li><strong>Unity and React:</strong> Combining game engines (Unity) with web technologies (React) for browser-based games or those with web-based admin interfaces.</li>
+            <li><strong>Effective Onboarding:</strong> A well-designed tutorial reduces early drop-off rates.</li>
+            <li><strong>Clusion:</strong> An internal studio term referring to the satisfying closure of a game mechanic — the moment the player feels they "did it."</li>
+          </ul>
+        </div>
+        <div class="keyword-section reveal">
+          <h3 class="topic-title"><span class="topic-num">03</span>Keywords</h3>
+          <div class="keyword-grid">
+            <span class="kw-tag">Onboarding</span><span class="kw-tag">Dynamic UX</span><span class="kw-tag">Pitch</span>
+            <span class="kw-tag">Deck Builder</span><span class="kw-tag">Golden Candidate</span><span class="kw-tag">Feedback</span>
+            <span class="kw-tag">Feedback Hardware</span><span class="kw-tag">Unity + React</span><span class="kw-tag">Clusion</span>
+            <span class="kw-tag">Study Margin</span><span class="kw-tag">Progression System</span><span class="kw-tag">Flexible Code</span>
+          </div>
+        </div>
+        <div class="conclusion-block reveal">
+          <h3 class="topic-title"><span class="topic-num">04</span>Conclusion</h3>
+          <p>Indie Level Studio demonstrated that building video games in Colombia is viable when technical talent is combined with product vision, the key lies in understanding the user, building experiences before mechanics, and maintaining code that can grow alongside the client's ideas. A video game is, ultimately, a form of communication.</p>
+        </div>
+      </div><!-- /conf1-en -->
+    </section>
+
+    <!-- ══════════════════════════════════ CONFERENCIA 2 ══════════════════════════════════ -->
+    <section class="conference-section alt-section" id="conf2">
+      <div class="section-header reveal">
+        <div class="conf-badge badge-2">Conferencia 02</div>
+        <h2 class="section-title">Tecnologías Emergentes:<br/><span>Ciberseguridad &amp; IA</span></h2>
+        <div class="speakers-row">
+          <div class="speaker-chip">
+            <div class="speaker-avatar av3">OM</div>
+            <div><strong>Oscar Steven Mayorga V.</strong><small>Security Analyst</small></div>
+          </div>
+          <div class="speaker-chip">
+            <div class="speaker-avatar av4">AB</div>
+            <div><strong>Alan Beltran</strong><small>interviewer</small></div>
+          </div>
+          <div class="company-badge badge-2-c">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Hacketix
+          </div>
+        </div>
+      </div>
+
+      <div class="lang-toggle-wrap reveal">
+        <div class="lang-toggle" id="langToggle2">
+          <button class="lang-btn active" data-conf="2" data-lang="es">🇨🇴 Español</button>
+          <button class="lang-btn"        data-conf="2" data-lang="en">🇺🇸 English</button>
+        </div>
+      </div>
+
+      <!-- ES -->
+      <div class="conf-content" id="conf2-es">
+        <div class="info-grid reveal">
+          <div class="info-card"><h3>Introducción</h3><p>Hacketix es una empresa especializada en software seguro. Oscar Steven Mayorga Villarraga y Alan Beltran presentaron un panorama real de las amenazas digitales actuales en Colombia y el mundo, desde vulnerabilidades técnicas hasta fraudes cotidianos que afectan a cualquier usuario de internet.</p></div>
+          <div class="info-card"><h3>Objetivo</h3><p>Identificar los principales fallos de seguridad en sistemas digitales, comprender cómo funcionan los ataques más comunes, y presentar soluciones concretas como la doble autenticación, los gestores de contraseñas y las buenas prácticas de ciberhigiene.</p></div>
+        </div>
+        <div class="topic-block reveal">
+          <h3 class="topic-title"><span class="topic-num">01</span>Desarrollo del Tema</h3>
+          <div class="topic-body">
+            <p>La conferencia comenzó con un concepto clave: <strong>identificar el fallo</strong> antes de que lo haga un atacante. Hacketix trabaja con metodologías de <strong>ethical hacking</strong> para encontrar vulnerabilidades en sistemas antes de que sean explotadas maliciosamente.</p>
+            <p>Oscar Steven explicó el proceso de <strong>plantear la solución inicial</strong>: no se trata de parchear el problema rápido, sino de entender por qué ocurrió. Uno de los ejemplos más cercanos fue la <strong>vulnerabilidad en el login</strong>: contraseñas débiles, ausencia de límite de intentos y formularios sin cifrado son puertas abiertas para cualquier atacante básico.</p>
+            <p>Alan Beltran habló sobre el <strong>fraude del SOAT</strong> en Colombia: sitios web que clonan páginas oficiales de aseguradoras con un diseño idéntico al original para engañar a los usuarios y robar sus datos bancarios. Este es un ejemplo clásico de <strong>web sides</strong> (sitios falsos) y <strong>slitting de tráfico</strong> (desviar usuarios hacia páginas fraudulentas).</p>
+            <p>Otro tema central fue el papel de la <strong>IA en la ciberseguridad</strong>. Los conferencistas señalaron que la inteligencia artificial es "muy complaciente con el usuario": responde casi cualquier pregunta sin cuestionar la intención, lo que puede facilitar la generación de <strong>deep fakes</strong>, textos de phishing y código malicioso.</p>
+          </div>
+        </div>
+        <div class="highlight-block reveal">
+          <h3 class="topic-title"><span class="topic-num">02</span>Puntos Importantes</h3>
+          <ul class="highlight-list">
+            <li><strong>Ethical Hacking:</strong> Práctica de atacar sistemas con autorización para encontrar sus vulnerabilidades antes que actores maliciosos. Es la base del trabajo de Hacketix.</li>
+            <li><strong>Doble Autenticación (2FA):</strong> La solución más efectiva contra el ciberacoso y el acceso no autorizado. Añade una capa de verificación adicional al inicio de sesión.</li>
+            <li><strong>Contraseñas débiles:</strong> El 80% de las brechas de seguridad se originan en contraseñas predecibles o reutilizadas.</li>
+            <li><strong>Gestores de contraseñas:</strong> Herramientas que generan y almacenan contraseñas únicas y complejas de forma segura.</li>
+            <li><strong>Deep Fakes:</strong> Contenido audiovisual generado por IA que suplanta la identidad de personas reales. Herramienta creciente en el cibercrimen.</li>
+            <li><strong>Slitting de tráfico:</strong> Técnica para interceptar o desviar el tráfico de red hacia servidores controlados por el atacante.</li>
+            <li><strong>Web sides (sitios clonados):</strong> Páginas falsas que imitan a sitios legítimos para robar credenciales o datos bancarios.</li>
+            <li><strong>Casos de uso vs. casos de abuso:</strong> Toda tecnología tiene un uso legítimo y un potencial de abuso. Entender ambos es fundamental para diseñar sistemas seguros.</li>
+          </ul>
+        </div>
+        <div class="keyword-section reveal">
+          <h3 class="topic-title"><span class="topic-num">03</span>Palabras Clave</h3>
+          <div class="keyword-grid kw-red">
+            <span class="kw-tag">Ethical Hacking</span><span class="kw-tag">Doble Autenticación</span><span class="kw-tag">Deep Fakes</span>
+            <span class="kw-tag">Contraseñas Débiles</span><span class="kw-tag">Gestores de Contraseñas</span><span class="kw-tag">Slitting de Tráfico</span>
+            <span class="kw-tag">Web Sides</span><span class="kw-tag">Casos de Uso</span><span class="kw-tag">Casos de Abuso</span>
+            <span class="kw-tag">Cibercrimen</span><span class="kw-tag">Fraude SOAT</span><span class="kw-tag">Vulnerabilidad Login</span>
+            <span class="kw-tag">Margen de Estudio</span><span class="kw-tag">Golden Candidate</span><span class="kw-tag">Feedback</span>
+          </div>
+        </div>
+        <div class="conclusion-block reveal">
+          <h3 class="topic-title"><span class="topic-num">04</span>Conclusión</h3>
+          <p>Hacketix demostró que la seguridad digital no es un lujo técnico sino una necesidad cotidiana, desde la vulnerabilidad de un login hasta el fraude del SOAT, los riesgos son reales y cercanos. La doble autenticación, los gestores de contraseñas y la educación digital son las primeras líneas de defensa, la IA es una herramienta poderosa, pero su complacencia exige que los usuarios desarrollen pensamiento crítico antes de confiar ciegamente en sus respuestas.</p>
+        </div>
+
+        <!-- GALERÍA CARRUSEL CONF 2 -->
+        <div class="media-section reveal">
+          <h3 class="topic-title"><span class="topic-num">05</span>Galería Multimedia</h3>
+          <p class="media-subtitle">Tomas del evento — Hacketix</p>
+          <div class="carousel" id="carousel2">
+            <div class="carousel-track" id="track2">
+              <div class="carousel-slide"><div <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg><psan><img src="images 2/1.jpeg" alt="Imagen"></span></div></div>
+              <div class="carousel-slide"><div <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg><span><img src="images 2/2.jpeg" alt="Imagen"></span></div></div>
+              <div class="carousel-slide"><div <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg><span><img src="images 2/3.jpeg" alt="Imagen"></span></div></div>
+              <div class="carousel-slide"><div <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg><span><img src="images 2/4.jpeg" alt="Imagen"></span></div></div>
+              <div class="carousel-slide"><div <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg><span><img src="images 2/5.jpeg" alt="Imagen"></span></div></div>
+              <div class="carousel-slide"><div <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg><span><img src="images 2/6.jpeg" alt="Imagen"></span></div></div>
+              <div class="carousel-slide"><div <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg><span><img src="images 2/7.jpeg" alt="Imagen"></span></div></div>
+              <div class="carousel-slide"><div <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg><span><img src="images 2/8.jpeg" alt="Imagen"></span></div></div>
+              <div class="carousel-slide"><div <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg><span><img src="images 2/9.jpeg" alt="Imagen"></span></div></div>
+              <div class="carousel-slide"><div <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></svg><span><img src="images 2/10.jpeg" alt="Imagen"></span></div></div>
+            </div>
+            <button class="carousel-btn carousel-prev" data-carousel="2" aria-label="Anterior">&#8249;</button>
+            <button class="carousel-btn carousel-next" data-carousel="2" aria-label="Siguiente">&#8250;</button>
+            <div class="carousel-dots" id="dots2"></div>
+            <div class="carousel-counter" id="counter2">1 / 10</div>
+          </div>
+        </div>
+      </div><!-- /conf2-es -->
+
+      <!-- EN -->
+      <div class="conf-content hidden" id="conf2-en">
+        <div class="info-grid reveal">
+          <div class="info-card"><h3>Introduction</h3><p>Hacketix is a company specializing in secure software. Oscar Steven Mayorga Villarraga and Alan Beltran presented a real-world overview of current digital threats in Colombia and globally, from technical vulnerabilities to everyday fraud affecting any internet user.</p></div>
+          <div class="info-card"><h3>Objective</h3><p>To identify the main security flaws in digital systems, understand how common attacks work, and present concrete solutions such as two-factor authentication, password managers, and good cyber hygiene practices.</p></div>
+        </div>
+        <div class="topic-block reveal">
+          <h3 class="topic-title"><span class="topic-num">01</span>Topic Development</h3>
+          <div class="topic-body">
+            <p>The talk began with a key concept: <strong>identify the flaw</strong> before an attacker does. Hacketix uses <strong>ethical hacking</strong> methodologies to find vulnerabilities in systems before they are maliciously exploited.</p>
+            <p>Oscar Steven explained the process of <strong>proposing the initial solution</strong>: it's not about patching the problem quickly, but understanding why it occurred. One of the most relatable examples was the <strong>login vulnerability</strong>: weak passwords, no attempt limits, and unencrypted forms are open doors for any basic attacker.</p>
+            <p>Alan Beltran discussed the <strong>SOAT insurance fraud</strong> in Colombia: websites that clone official insurer pages with identical design to deceive users and steal their banking data. This is a classic example of <strong>web sides</strong> (fake sites) and <strong>traffic slitting</strong> (redirecting users to fraudulent pages).</p>
+            <p>Another central theme was the role of <strong>AI in cybersecurity</strong>. The speakers noted that artificial intelligence is "very compliant with the user" — it answers almost any question without questioning intent — which can facilitate <strong>deep fakes</strong>, phishing texts, and malicious code generation.</p>
+          </div>
+        </div>
+        <div class="highlight-block reveal">
+          <h3 class="topic-title"><span class="topic-num">02</span>Key Points</h3>
+          <ul class="highlight-list">
+            <li><strong>Ethical Hacking:</strong> The practice of attacking systems with authorization to find vulnerabilities before malicious actors do. This is the foundation of Hacketix's work.</li>
+            <li><strong>Two-Factor Authentication (2FA):</strong> The most effective solution against cyberharassment and unauthorized access. Adds an extra verification layer to the login process.</li>
+            <li><strong>Weak Passwords:</strong> 80% of security breaches originate from predictable or reused passwords.</li>
+            <li><strong>Password Managers:</strong> Tools that generate and securely store unique, complex passwords.</li>
+            <li><strong>Deep Fakes:</strong> AI-generated audiovisual content that impersonates real people. A growing tool in cybercrime.</li>
+            <li><strong>Traffic Slitting:</strong> Technique to intercept or redirect network traffic toward attacker-controlled servers.</li>
+            <li><strong>Web Sides (Cloned Sites):</strong> Fake pages that mimic legitimate sites to steal credentials or banking data.</li>
+            <li><strong>Use Cases vs. Abuse Cases:</strong> Every technology has a legitimate use and a potential for abuse. Understanding both is essential for designing secure systems.</li>
+          </ul>
+        </div>
+        <div class="keyword-section reveal">
+          <h3 class="topic-title"><span class="topic-num">03</span>Keywords</h3>
+          <div class="keyword-grid kw-red">
+            <span class="kw-tag">Ethical Hacking</span><span class="kw-tag">Two-Factor Auth</span><span class="kw-tag">Deep Fakes</span>
+            <span class="kw-tag">Weak Passwords</span><span class="kw-tag">Password Managers</span><span class="kw-tag">Traffic Slitting</span>
+            <span class="kw-tag">Web Sides</span><span class="kw-tag">Use Cases</span><span class="kw-tag">Abuse Cases</span>
+            <span class="kw-tag">Cybercrime</span><span class="kw-tag">SOAT Fraud</span><span class="kw-tag">Login Vulnerability</span>
+          </div>
+        </div>
+        <div class="conclusion-block reveal">
+          <h3 class="topic-title"><span class="topic-num">04</span>Conclusion</h3>
+          <p>Hacketix demonstrated that digital security is not a technical luxury but a daily necessity, from login vulnerabilities to SOAT fraud, the risks are real and close. Two-factor authentication, password managers, and digital education are the first lines of defense, AI is a powerful tool, but its compliance demands that users develop critical thinking before blindly trusting its responses.</p>
+        </div>
+      </div><!-- /conf2-en -->
+    </section>
+
+    <!-- ══════════════════════════════════ GLOSSARY ══════════════════════════════════ -->
+    <section class="glossary-section" id="glossary">
+      <div class="section-header reveal">
+        <div class="conf-badge badge-g">Glossary</div>
+        <h2 class="section-title">Glosario Técnico<br/><span>Technical Glossary</span></h2>
+      </div>
+      <div class="gloss-controls reveal">
+        <input type="text" id="glossSearch" placeholder="Buscar término / Search term..." class="gloss-search"/>
+        <div class="gloss-filter">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="conf1">Conf. 1</button>
+          <button class="filter-btn" data-filter="conf2">Conf. 2</button>
+        </div>
+      </div>
+      <div class="gloss-table-wrap reveal">
+        <table class="gloss-table" id="glossTable">
+          <thead><tr><th>#</th><th>English</th><th>Español</th><th>Definition / Definición</th><th>Conf.</th></tr></thead>
+          <tbody id="glossBody"></tbody>
+        </table>
+        <p class="gloss-empty hidden" id="glossEmpty">No se encontraron resultados.</p>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════ REFLEXIÓN ÉTICA ══════════════════════════════════ -->
+    <section class="reflexion-section" id="reflexion">
+      <div class="section-header reveal">
+        <div class="conf-badge badge-r">reflection</div>
+        <h2 class="section-title">Conclusión y<br/><span>Reflexión Ética</span></h2>
+        <p class="gloss-subtitle"><strong>¿Cómo se implementa la ética en la tecnología empresarial?</strong></p>
+      </div>
+
+      <!-- ✏️ BLOQUE DE REFLEXIÓN — mismo estilo que conclusión
+           Reemplaza los párrafos de abajo con tu texto cuando lo tengas listo -->
+      <div class="conclusion-block reflexion-block reveal">
+        <h3 class="topic-title"><span class="topic-num rnum">✦</span>Reflexión Personal</h3>
+        <p>Las conferencias me permitieron comprender que la ética en la tecnología empresarial se implementa mediante decisiones responsables en el desarrollo y uso de las 
+          herramientas tecnológicas, esto incluye el uso adecuado de la inteligencia artificial, la protección de los datos de los usuarios, la aplicación consciente de la automatización y
+           la consideración del impacto social que pueden generar las nuevas tecnologías. Además, entendí que la responsabilidad profesional en el desarrollo de software 
+           es fundamental, ya que los desarrolladores no solo crean soluciones tecnológicas, sino que también deben garantizar que estas sean seguras, transparentes y beneficiosas para
+            las personas, en conclusión, la ética se implementa cuando la innovación tecnológica va acompañada de responsabilidad, respeto por los usuarios y compromiso con la sociedad.
+
+
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════ FOOTER ══════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <img src="images/logo-col50.png" alt="Colombia 5.0" class="footer-logo-img"/>
+      <p>COLOMBIA 5.0 · EVENTO ACADÉMICO</p>
+      <div class="footer-links">
+        <a href="#home">Inicio</a>
+        <a href="#conf1">Conferencia 1</a>
+        <a href="#conf2">Conferencia 2</a>
+        <a href="#glossary">Glossary</a>
+        <a href="#reflexion">Reflexión Ética</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18,15 12,9 6,15"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
